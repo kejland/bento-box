@@ -1,0 +1,41 @@
+#bento {
+    height: 400px;
+    width: 400px;
+}
+
+
+#fish {
+    grid-area: fish;
+}
+
+#map {
+    grid-area: map;
+}
+
+#vase-short {
+    grid-area: vase1;
+}
+
+#vase-tall {
+    grid-area: vase2;
+}
+
+#bamboo {
+    grid-area: bamboo;
+}
+
+#tako {
+    grid-area: tako;
+}
+
+#bento {
+    display: grid;
+    grid-template-columns: (4,1fr);
+    grid-template-rows: (4,1fr);
+    grid-template-areas: 
+    "fish fish fish vase1"
+    "map map map vase1"
+    "vase2 bamboo bamboo bamboo"
+    "vase2 bamboo bamboo bamboo"
+    "vase2 tako tako tako";
+}
